@@ -8,10 +8,8 @@ int main()
  GlobalMemoryStatus(memory_status);
 
  MEMORYSTATUS var = *memory_status;
-
- int * n_ptr = 0x0;
  
- std::cout << n_ptr[0]; 
+ std::cout << var.dwTotalPhys; 
 
  return 0;
 }
