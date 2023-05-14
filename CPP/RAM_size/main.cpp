@@ -8,5 +8,7 @@ int GET_MEM_SIZE_PHYS()
 
  MEMORYSTATUS var = *memory_status;
 
+ memset((void *)memory_status,0,sizeof(MEMORYSTATUS));
+
  return var.dwTotalPhys;
 }
