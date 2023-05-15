@@ -111,5 +111,6 @@ class extended_linked_list {
 };
 
 class linked_list_node {
-
+ linked_list_node * next;
+ void * value_pointer;
 };
